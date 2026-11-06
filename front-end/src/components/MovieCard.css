@@ -1,0 +1,68 @@
+.movie-card {
+  display: flex;
+  align-items: center; /* Vertically align content */
+  background-color: #000000; /* Black background */
+  border-radius: 30px;
+  padding: 24px;
+  width: 700px;
+  max-width: 90%;
+  margin: 30px auto;
+  box-shadow: 10px 10px 40px #1105616e, -10px -10px 40px #1105612c;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 18px;
+  color: #ffffff; /* Default text color white */
+}
+
+.card-left {
+  flex: 0 0 auto;
+}
+
+.poster {
+  width: auto;
+  height: 480px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-right {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical alignment */
+  padding-left: 24px;
+  color: #ffffff; /* Ensure text stays white */
+}
+
+.movie-title {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 12px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #666;
+  margin: 0 auto 16px;
+  width: 80%;
+}
+
+.meta {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #cccccc;
+  font-size: 16px;
+}
+
+.details {
+  padding-left: 8px;
+}
+
+.details p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+  color: #dddddd;
+}

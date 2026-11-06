@@ -1,0 +1,145 @@
+/* frontend/src/pages/Results.css */
+
+.results-container {
+  background-color: #daecff;
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.recommend-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+/* ---------------- Top Pick Card (Left Side) ---------------- */
+
+.top-pick-card {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  gap: 20px;
+  text-align: left;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.top-pick-left {
+  flex: 0 0 220px;
+}
+
+.top-pick-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.top-pick-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.top-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 6px 0 8px 0;
+}
+
+.top-genres {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.top-info {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.top-pick-card,
+.top-pick-right {
+  height: auto;
+}
+
+/* ---------------- Side Picks (Right Side - Side by Side) ---------------- */
+
+.side-picks-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.side-pick-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-pick-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.side-pick-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.side-pick-genres {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+.side-pick-card {
+  height: auto;
+}
+
+/* ---------------- Return Button ---------------- */
+
+.return-button {
+  margin-top: 50px;
+  padding: 12px 24px;
+  background-color: #a60042;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.return-button:hover {
+  background-color: #8c0038;
+}

@@ -1,0 +1,33 @@
+# Backend - Python
+__pycache__/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# Firebase credentials (highly sensitive)
+backend/serviceAccountKey.json
+
+# Datasets
+backend/dataset/tmdb_5000_credits.csv
+backend/dataset/tmdb_5000_movies.csv
+backend/dataset/vectorized_movies.csv
+backend/dataset/vectorized_movies.pkl 
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Frontend (Completely ignored for now)
+front-end/src/api/tmdb.js
+front-end/src/firebase/firebase.js
+
+# Environment and logs
+*.env
+*.env.*
+*.log
+
+# OS / IDE clutter
+.DS_Store
+.vscode/
+.idea/

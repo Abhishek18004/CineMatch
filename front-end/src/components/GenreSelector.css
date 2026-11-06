@@ -1,0 +1,79 @@
+.genre-selector {
+  padding: 20px;
+  background-color: #daecff;
+  text-align: center;
+}
+
+.genre-selector h2 {
+  color: #112233;
+  margin-bottom: 15px;
+}
+
+/* Grid layout for buttons */
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 12px;
+  justify-items: center;
+}
+
+/* Button base style */
+.genre-btn {
+  --main-color: #04516a; /* Accent teal */
+  --hover-bg: rgba(4, 81, 106, 0.15);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 16px;
+  width: 100%;
+  max-width: 120px;
+  background-color: white;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Hover Effect: spread teal glow */
+.genre-btn:hover {
+  color: white;
+}
+
+.genre-btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 300%;
+  height: 300%;
+  background-color: var(--main-color);
+  transition: transform 0.4s ease;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.genre-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Selected / Active state */
+.genre-btn.selected {
+  background-color: #a60042; /* Burgundy */
+  color: white;
+  border-color: #a60042;
+}
+
+.genre-btn.selected::before {
+  display: none;
+}

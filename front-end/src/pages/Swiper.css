@@ -1,0 +1,47 @@
+.swiper-container {
+  text-align: center;
+  background-color: #daecff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.user-label {
+  font-size: 20px;
+  color: #112233;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.movie-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.swipe-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  color: white;
+}
+
+.skip {
+  background-color: #04516a; /* Teal */
+}
+
+.like {
+  background-color: #a60042; /* Burgundy */
+}
+
+.swipe-btn:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
